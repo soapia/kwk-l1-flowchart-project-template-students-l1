@@ -1,3 +1,5 @@
+require_relative 'quiz.rb'
+
 class ApplicationController < Sinatra::Base
 
   configure do
