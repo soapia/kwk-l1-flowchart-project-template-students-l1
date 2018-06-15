@@ -26,7 +26,7 @@ class ApplicationController < Sinatra::Base
   # end
   
   post '/' do
-    @mood_result = mood(params[:result])
+    @mood_results=mood(params[:result])
     return erb :results
   end
   
