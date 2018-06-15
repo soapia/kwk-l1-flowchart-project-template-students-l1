@@ -1,4 +1,4 @@
-require 'quiz.rb'
+require '../../quiz.rb'
 
 class ApplicationController < Sinatra::Base
 
