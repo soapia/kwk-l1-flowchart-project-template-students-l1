@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mood Swings</title>
+    
+    <style>
+      li {
+        margin: 15px;
+      }
+      li img {
+        padding-right: 15px;
+      }
+      .pl {
+        margin-right: 22%;
+        float: left;
+      }
+      .card {
+        margin-top: 30px;
+        padding: 25px;
+        background-color: #eaeaff;
+      }
+      .shows img {
+        padding: 20px;
+      }
+      .shows h3 {
+        padding-top: 20px;
+      }
+      .shows p {
+        font-size: 65%;
+      }
+      iframe {
+        margin-bottom: 40px;
+      }
+      li a {
+        font-size: 130%;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <nav class="navbar fixed navbar-expand-md navbar-light" style="background-color: #adfab6;" id="nav">
+        <a class="navbar-brand" href="index.erb">Mood Swings<img src="https://cdn3.iconfinder.com/data/icons/camping-outline-pt-3/100/107_-_swing_playground-512.png" width='50px'></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="happy">happy</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="upset">upset</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="stressed">stressed</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="peaceful">peaceful</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="">about us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="playlists card">
+      <h1>Playlists</h1>
+      
+      <div class="row">
+        <div class="col-6">
+          <ul>
+            <li>
+              <img src="https://i.scdn.co/image/9d6c0ac72d70649f0c0403ded702b33405a94067" width="120px">
+              <a href="https://open.spotify.com/user/spotify/playlist/37i9dQZF1DWU0ScTcjJBdj" target="_blank">Relax and Unwind</a>
+              </li>
+              <li>
+                <img src="https://i.scdn.co/image/a4af47fc2ff189edd0beaaa64fa70be62c6998eb" width="120px">
+                <a href="https://open.spotify.com/user/spotify/playlist/37i9dQZF1DX2UgsUIg75Vg" target="_blank">Chill R&B</a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="col-6">
+          <ul>
+            <li>
+              <img src="https://i.scdn.co/image/9a8285167e14200eb25559732b345c4a430344a0" width="120px">
+              <a href="https://open.spotify.com/user/spotify/playlist/37i9dQZF1DX3SQwW1JbaFt" target="_blank">Pop Relax</a>
+            </li>
+            <li>
+              <img src="https://i.scdn.co/image/b8b762cc8778154d126c2747f4e6a23dc8a5f936" width="120px">
+              <a href="https://open.spotify.com/user/spotify/playlist/37i9dQZF1DWXe9gFZP0gtP" target="_blank">Stress Relief</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+    
+    <div class="web card">
+      <h1>Websites to Visit</h1>
+      
+      <div class="row">
+        <div class="col-6">
+          <ul>
+            <li>
+              <a href="http://www.theuselessweb.com/" target="_blank">Useless Web</a>
+            </li>
+            <li>
+              <a href="http://weavesilk.com/" target="_blank">Silk</a>
+            </li>
+            <li>
+              <a href="https://calmingmanatee.com/">Calming Manatee</a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="col-6">
+          <ul>
+            <li>
+              <a href="http://www.sanger.dk/" target="_blank">Just Click</a>
+            </li>
+            <li>
+              <a href="http://make-everything-ok.com/" target="_blank">Magic Button</a>
+            </li>
+            <li>
+              <a href="http://www.relaxonline.me.uk/sa1/index.html" target="_blank">Stress Analysis</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+    
+     <div class="shows card">
+      <h1>Shows to Binge</h1>
+      
+      <div class="row">
+        <div class="col-5">
+          <img src="https://i.ytimg.com/vi/8GxqvnQyaxs/maxresdefault.jpg" width="400px">
+        </div>
+        <div class="col-7">
+          <h3>The Office<h3>
+          <p>This hit comedy chronicles the foibles of disgruntled office workers -- led by deluded boss Michael Scott -- at the Dunder Mifflin paper company.</p>
+        </div>
+        
+        <div class="col-5">
+          <img src="https://hips.htvapps.com/htv-prod-media.s3.amazonaws.com/images/parks-n-rec-1511229205.jpg?crop=1.00xw:1.00xh;0,0&resize=640:*" width="400px">
+        </div>
+        <div class="col-7">
+          <h3>Parks and Recreation<h3>
+          <p>In this Emmy-nominated comedy, an employee with a rural Parks and Recreation department is full of energy and ideas but bogged down by bureaucracy.</p>
+        </div>
+        
+        <div class="col-5">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/81HIOACiZLL._RI_.jpg" width="400px">
+        </div>
+        <div class="col-7">
+          <h3>Planet Earth<h3>
+          <p>This landmark series transports nature lovers from the Himalayan Mountains to the depths of the ocean and everywhere in between.</p>
+        </div>
+      </div>
+      </div>
+      
+      <div class="wo card">
+        <h1>Workouts</h1>
+        <div class="row">
+          <div class="col-6">
+            <iframe width="400" height="220" src="https://www.youtube.com/embed/X1TuhAn6C-g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+          <div class="col-6">
+            <iframe width="400" height="220" src="https://www.youtube.com/embed/cZe_qS38hVg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+          <div class="col-6">
+            <iframe width="400" height="220" src="https://www.youtube.com/embed/HcLC5B97gJc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+          <div class="col-6">
+            <iframe width="400" height="220" src="https://www.youtube.com/embed/k8AMC2HssMw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    
+  </body>
+</html>
