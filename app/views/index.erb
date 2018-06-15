@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mood Swings</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald|PT+Sans+Narrow" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Oswald', sans-serif;
+      }
+      .carousel-caption a {
+        text-decoration: none;
+        font-size: 400%;
+        color: white;
+      }
+      .h:hover {
+        color: #fff8b4; 
+      }
+      .p:hover {
+        color: #e7d3ff; 
+      }
+      .u:hover {
+        color: #aadeed; 
+      }
+      .s:hover {
+        color: #adfab6; 
+      }
+      .card {
+        background-color: lightblue;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <nav class="navbar fixed navbar-expand-md navbar-light" style="background-color: white;" id="nav">
+        <a class="navbar-brand" href="index.erb">Mood Swings<img src="https://cdn3.iconfinder.com/data/icons/camping-outline-pt-3/100/107_-_swing_playground-512.png" width='50px'></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="happy">happy</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="upset">upset</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="stressed">stressed</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="peaceful">peaceful</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">about us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-interval="200">
+          <img class="d-block w-100" src="https://images.pexels.com/photos/67857/daisy-flower-spring-marguerite-67857.jpeg?cs=srgb&dl=nature-flowers-garden-67857.jpg&fm=jpg" alt="happy" height="520px">
+          <div class="carousel-caption d-none d-md-block">
+            <a class="h" href="happy">happy</a>
+          </div>
+        </div>
+        <div class="carousel-item" data-interval="200">
+          <img class="d-block w-100" src="https://mynoise.net/Data/RAIN/fb.jpg" alt="upset" height="520px">
+          <div class="carousel-caption d-none d-md-block">
+            <a class="u" href="upset">upset</a>
+          </div>
+        </div>
+        <div class="carousel-item" data-interval="200">
+          <img class="d-block w-100" src="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/EhSddnV/videoblocks-highway-traffic-cars-driving-at-multiple-lane-speedway-at-night-blurred-highway-with-heavy-traffic-at-rush-hour-lots-of-traffic-at-night-video-background-cars-driving-at-high-speed-great-for-any-driving-corporate-city-or-urban-ideas_rnob9n04m_thumbnail-full14.png" alt="stressed" height="520px">
+          <div class="carousel-caption d-none d-md-block">
+            <a class="s"  href="stressed">stressed</a>
+          </div>
+        </div>
+        <div class="carousel-item" data-interval="200">
+          <img class="d-block w-100" src="http://muslimmatters.org/wp-content/uploads/shutterstock_116437375.jpg" alt="peaceful" height="520px">
+          <div class="carousel-caption d-none d-md-block">
+            <a class="p"  href="peaceful">peaceful</a>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    
+    <div>
+      <h6>If You Don't Know The Mood You Are In Already, Take The Mood Quiz, Find Out What your feeling, and get on route to a better state of mind! </h6>
+    </div>
+    
+    <div class="quiz card pl-5 my-4">
+      <h1>WHAT'S YOUR MOOD? QUIZ</h1>
+      <form method=POST>
+        
+        <h4> DO YOU BELIEVE IN YOURSELF? </h4>
+        <input type="radio" name = "DO YOU BELIEVE IN YOURSELF?" value= "yes"> yes
+        <br>
+         <input type="radio" name = "DO YOU BELIEVE IN YOURSELF?" value= "no"> no
+         
+        <h4> ARE YOU CURRENTLY SATISFIED WITH YOUR LOVE LIFE? </h4>
+        <input type="radio" name = "ARE YOU CURRENTLY SATISFIED WITH YOUR LOVE LIFE?" value= "yes"> yes
+        <br>
+         <input type="radio" name = "ARE YOU CURRENTLY SATISFIED WITH YOUR LOVE LIFE?" value= "no"> no 
+         
+       <h4> COULD AN ANIMAL CHEER YOU UP RIGHT NOW? </h4>
+       <input type="radio" name = "COULD AN ANIMAL CHEER YOU UP RIGHT NOW?" value= "yes"> yes 
+        <br>
+         <input type="radio" name = "COULD AN ANIMAL CHEER YOU UP RIGHT NOW?" value= "no"> no 
+         
+       <h4> DO YOU HAVE A LOT ON YOUR PLATE AT THE MOMENT? </h4>
+       <input type="radio" name = "DO YOU HAVE A LOT ON YOUR PLATE AT THE MOMENT?" value= "yes"> yes 
+        <br>
+         <input type="radio" name = "DO YOU HAVE A LOT ON YOUR PLATE AT THE MOMENT?" value= "no"> no 
+         
+       <h4> WOULD MUSIC CALM YOU DOWN RIGHT NOW? </h4>
+       <input type="radio" name = "WOULD MUSIC CALM YOU DOWN RIGHT NOW?" value= "yes"> yes 
+        <br>
+         <input type="radio" name = "WOULD MUSIC CALM YOU DOWN RIGHT NOW?" value= "no"> no 
+         
+       <h4> DO YOU HAVE A CRUSH? </h4>
+       <input type="radio" name = "DO YOU HAVE A CRUSH?" value= "yes"> yes 
+        <br>
+         <input type="radio" name = "DO YOU HAVE A CRUSH?" value= "no"> no 
+         
+      <h4> HAVE YOU BEEN ON A VACATION RECENTLY? </h4>
+       <input type="radio" name = "HAVE YOU BEEN ON A VACATION RECENTLY?" value= "yes"> yes 
+        <br>
+         <input type="radio" name = "HAVE YOU BEEN ON A VACATION RECENTLY?" value= "no"> no 
+         
+      <h4> DO YOU ENJOY WATCHING VINES? </h4>
+       <input type="radio" name = "DO YOU ENJOY WATCHING VINES?" value= "yes"> yes 
+        <br>
+         <input type="radio" name = "DO YOU ENJOY WATCHING VINES?" value= "no"> no 
+         
+      <h4> ARE YOU IN THE MOOD TO LAUGH WITH FRIENDS? </h4>
+       <input type="radio" name = "ARE YOU IN THE MOOD TO LAUGH WITH FRIENDS?" value= "yes"> yes 
+        <br>
+         <input type="radio" name = "ARE YOU IN THE MOOD TO LAUGH WITH FRIENDS?" value= "no"> no 
+         
+      <h4> ARE YOU LIVING UP TO YOUR OWN EXPECTATIONS? </h4>
+       <input type="radio" name = "ARE YOU LIVING UP TO YOUR OWN EXPECTATIONS?" value= "yes"> yes 
+        <br>
+         <input type="radio" name = "ARE YOU LIVING UP TO YOUR OWN EXPECTATIONS?" value= "no"> no 
+        <br>
+        <br>
+         <input type="submit" value = "DISCOVER YOUR MOOD">
+      </form>
+    </div>
+  
+  </body>
+</html>
